@@ -14,7 +14,7 @@ def exponent(marih:float) -> float:
     for i in range(0,50):
         result2= result2 + (power(marih,i))/(azeret(i)) 
     return result2        
-def ln(x:float) -> float:
+def Ln(x:float) -> float:
     if x<=0:
         return 0.0
     else:
@@ -27,7 +27,7 @@ def ln(x:float) -> float:
 def XtimesY(x:float,y:float) -> float:
     try:
         if(x>0):
-            a=exponent(ln(x)*y)
+            a=exponent(Ln(x)*y)
             result=float('%0.6f' % a)
             return result
         else:
